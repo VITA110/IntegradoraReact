@@ -1,21 +1,25 @@
+
 import React from 'react';
 import { universidades } from '../universidades'; // Importamos la lista de universidades
-import universidadElemento from './universidadElemento'; // Importamos el componente UniversityItem
+import UniversidadElemento from './universidadElemento'; // Importamos el componente UniversityItem
 
-const universidadElemento = () => {
+const UniversidadLista = () => {
   return (
-    <div className="university-list">
+    <div className="list-title">
       <h2>Lista de Universidades</h2>
+      <div className='uni-list'>
       {universidades.map((uni) => (
-        <universidadElemento 
+        <UniversidadElemento 
           key={uni.id} 
           name={uni.name} 
           ubi={uni.ubi} 
           carrera={uni.carrera} 
         />
       ))}
+      </div>
+      
     </div>
   );
 };
 
-export default universidadElemento;
+export default UniversidadLista;

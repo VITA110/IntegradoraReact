@@ -1,8 +1,8 @@
 import React from 'react';
 
-const universidadElemento = ({ name, ubi, carrera }) => {
+const UniversidadElemento = ({ name, ubi, carrera }) => {
   return (
-    <div className="university-item">
+    <div className="uni-item">
       <h3>{name}</h3>
       <p><strong>Ubicación:</strong> {ubi}</p>
       <p><strong>Programas:</strong> {carrera}</p>
@@ -10,4 +10,4 @@ const universidadElemento = ({ name, ubi, carrera }) => {
   );
 };
 
-export default universidadElementos;
+export default UniversidadElemento;

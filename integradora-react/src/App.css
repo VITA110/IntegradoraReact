@@ -1,6 +1,192 @@
+/*
+Estilo pal integer
+*/
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.univesidadElementos {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.universidadLista {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* src/App.css */
+.uni-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  transition: background-color 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.uni-item:hover{
+background-color: lightblue;
+}
+
+
+.uni-list {
+  display: grid; /* Usamos grid para crear una cuadrícula */
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+  gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+  justify-content: center;
+  align-items: center;
+}
+
+.list-title h2{
+  display: block;
+  font-size: 29px;
+}
+
+
+.uni-list ul {
+  display: flex; /* Para que los elementos dentro de la lista también sean flexibles */
+  flex-direction: row; /* Coloca los elementos de la lista en fila */
+  gap: 10px; /* Espacio opcional entre los elementos de la lista */
+  list-style: none; /* Elimina los puntos de la lista */
+  justify-content: center;
+  align-items: center;
+}
+
+.uni-list li {
+  list-style: none; /* Elimina los puntos de la lista */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  display: flex; /* Habilita flexbox en los elementos de la lista */
+  height: 100px; /* Establece una altura fija para centrar el contenido verticalmente */
+  background-color: #f0f0f0; /* Fondo opcional para visualizar el diseño */
+  border: 1px solid #ddd; /* Bordes opcionales para visualizar el diseño */
+}
+
+.uni-item {
+ /* Elimina los puntos de la lista */
+ /* Activa el flexbox en los elementos de la lista */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  padding: 5cap;
+  background-color: #f0f0f0; /* Fondo para visualizar mejor */
+  text-align: center; /* Centra el texto */
+   /* Ocupa el 100% de la anchura de la celda */
+  border: 1px solid #ddd; /* Bordes opcionales para visualizar el diseño */
+  margin: 10px; /* Agrega separación entre los elementos de la lista */
+}
+
+.uni-item h3 {
+  color: #878787;
+  transition: color 0.5s ease, font-size 0.5s ease;
+}
+.uni-item:hover h3{
+  color: rgb(0, 0, 0); 
+  font-size: 28px;
+}
+
+
+.uni-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* src/App.css */
+
+/* Estilos para la navbar */
+.navbar {
+  background-color: #b8c3da; /* Color de fondo */
+  padding: 10px;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App {
+  transition: font-size 0.5s ease-in-out;
+  font-size: 14px;
+}
+
+.App-header a:hover{
+  transition: font-size 0.5s ease-in;
+  
+}
+
+.navbar:hover{
+  transition: font-size 0.5s ease-in-out;
+}
+
+.navbar:hover a {
+  font-size: 16px;
+  transition: font-size 0.5s ease-in-out;
+}
+
+
+.navbar-logo {
+  color: #000000;
+  font-size: 24px;
+  margin-left: 20px;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.navbar:hover h2{
+  font-size: 30px;
+}
+
+
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+
+}
+
+.navbar-links li {
+  margin: 0 15px;
+
+}
+.navbar-links li:hover{
+
+}
+
+.navbar-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 14px;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.navbar-links a:hover {
+  font-size: 26px;
+
+  color: rgb(0, 0, 0); 
+}
+
+/* Estilos para la cabecera */
+.App-header {
+  background-color: #165ff2;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+
+/*
+Se acaba estilo pal integer
+*/
+
+
+
 .App {
   text-align: center;
-  color: gray;
+  color: rgb(0, 0, 0);
 }
 
 .App-logo {
@@ -15,8 +201,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: radial-gradient(at 58.6341031655865% 61.521900218884504%, hsla(240, 98.03921568627452%, 40%, 1) 0%, hsla(240, 98.03921568627452%, 40%, 0) 100%), radial-gradient(at 2.721800544459896% 73.73898722856187%, hsla(286.92737430167597, 100%, 35.09803921568627%, 1) 0%, hsla(286.92737430167597, 100%, 35.09803921568627%, 0) 100%), radial-gradient(at 77.60912539978348% 66.38788924990553%, hsla(151.97969543147207, 89.9543378995434%, 57.05882352941176%, 1) 0%, hsla(151.97969543147207, 89.9543378995434%, 57.05882352941176%, 0) 100%), radial-gradient(at 61.4491710317336% 94.34006484144956%, hsla(240, 98.03921568627452%, 40%, 1) 0%, hsla(240, 98.03921568627452%, 40%, 0) 100%), radial-gradient(at 55.62229398440228% 96.02754827145617%, hsla(286.92737430167597, 100%, 35.09803921568627%, 1) 0%, hsla(286.92737430167597, 100%, 35.09803921568627%, 0) 100%), radial-gradient(at 46.749326934674414% 27.791552555829746%, hsla(151.97969543147207, 89.9543378995434%, 57.05882352941176%, 1) 0%, hsla(151.97969543147207, 89.9543378995434%, 57.05882352941176%, 0) 100%), radial-gradient(at 75.1753373426064% 97.49391176394495%, hsla(240, 98.03921568627452%, 40%, 1) 0%, hsla(240, 98.03921568627452%, 40%, 0) 100%), radial-gradient(at 96.97422998485055% 69.29070588894615%, hsla(286.92737430167597, 100%, 35.09803921568627%, 1) 0%, hsla(286.92737430167597, 100%, 35.09803921568627%, 0) 100%);  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
