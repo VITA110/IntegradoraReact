@@ -1,8 +1,7 @@
 import React from 'react';
-import UniversidadLista from './components/universidadLista'; // Importa la lista de universidades
-import './App.css'; // Asegúrate de que los estilos estén aplicados
+import UniversidadLista from './components/universidadLista'; 
+import './App.css'; 
 
-// Nuevo componente Navbar
 function Navbar() {
   return (
     <nav className="navbar">
